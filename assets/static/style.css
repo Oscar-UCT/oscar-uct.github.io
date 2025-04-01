@@ -67,22 +67,31 @@ html{
     gap: 10%;
 }
 
-#encabezado-medio a
-{
+#encabezado-medio a {
+    position: relative;
     text-decoration: none;
     font-weight: 900;
     font-size: 2em;
+    padding-bottom: 3px;
     
-    border-bottom: 3px solid transparent;
-    
-    transition-property: border-bottom;
-    transition-duration: 200ms;
-    transition-timing-function: linear;
+    border-bottom: 2.5px solid transparent;
+    transition: border-bottom 200ms linear;
 }
 
-#encabezado-medio a:hover
-{
-    border-bottom: 3px solid black;
+#encabezado-medio a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2.5px;
+    background-color: black;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+#encabezado-medio a:hover::after {
+    width: 100%;
+    left: 0;
 }
 
 #encabezado-derecha
