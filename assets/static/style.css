@@ -303,3 +303,11 @@ footer
         display: none;
     }
 }
+
+@media (max-width:550px)
+{
+    body
+    {
+        padding: 0;
+    }
+}
