@@ -109,6 +109,13 @@ html{
     border-radius: 1em;
     box-shadow: 6px 6px 0px 0px hsla(0, 0%, 95%);
     text-decoration: none;
+
+    transition: background-color 0.4s;
+}
+
+#encabezad-derecha .contacto:hover
+{
+    background-color: hsl(0, 0%, 95%);
 }
 /* Fin encabezado */
 
