@@ -100,6 +100,11 @@ html{
     border-radius: 1em;
     box-shadow: 6px 6px 0px 0px hsla(0, 0%, 95%);
 }
+
+.contacto a
+{
+    text-decoration: none;
+}
 /* Fin encabezado */
 
 /* Seccion "Sobre mí" */ 
