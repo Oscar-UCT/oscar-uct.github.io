@@ -272,13 +272,34 @@ footer
     background-color: hsl(0, 0%, 95%);
 }
 
-@media (max-width:1100px) {
+@media (max-width:1200px) {
+    #encabezado
+    {
+        justify-content: space-between;
+    }
+    
+    #encabezado-izquierda, #encabezado-medio, #encabezado-derecha
+    {
+        flex: unset;
+    }
+
     #encabezado-medio
     {
-        display: none;
+        transform: scale(0.8);
     }
+    
 
     #sobre-mi .parrafo{
         max-width: 100%;
+    }
+}
+
+
+/* Hacer: entregar la posibilidad de volver a mostrar los elementos del header con un botón*/
+@media (max-width:900px)
+{
+    #encabezado-medio
+    {
+        display: none;
     }
 }
