@@ -1,1 +1,2 @@
-# oscar-uct.github.io
+# Portafolio Oscar C.
+**Este sitio web no es responsivo y no funciona correctamente en todos los dispositivos. Este sitio web es solo una demostración.**
