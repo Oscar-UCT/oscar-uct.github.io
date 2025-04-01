@@ -310,4 +310,9 @@ footer
     {
         padding: 0;
     }
+
+    #logos
+    {
+        width: unset;
+    }
 }
