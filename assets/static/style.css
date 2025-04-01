@@ -271,3 +271,14 @@ footer
     border-radius: 10px 10px 0px 0px;
     background-color: hsl(0, 0%, 95%);
 }
+
+@media (max-width:1100px) {
+    #encabezado-medio
+    {
+        display: none;
+    }
+
+    #sobre-mi .parrafo{
+        max-width: 100%;
+    }
+}
