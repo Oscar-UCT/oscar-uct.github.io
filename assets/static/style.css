@@ -60,6 +60,18 @@ html{
     justify-content: start;
 }
 
+#nombre-dinamico span
+{
+    cursor:default;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+#nombre-dinamico span:hover
+{
+    transform: translateY(-4px);
+}
+
 #encabezado-medio
 {
     text-wrap: nowrap;
