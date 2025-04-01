@@ -41,7 +41,7 @@ html{
     display: flex;
     align-items: center;
     padding: 1rem;
-    box-shadow: 6px 6px 0px 0px hsla(0, 0%, 95%);
+    box-shadow: 8px 7px 0px 0px hsla(0, 0%, 85%);
     border: 1px solid gray;
     margin: 1rem;
     margin-bottom: 2em;
@@ -92,6 +92,9 @@ html{
 
 #encabezado-derecha .contacto
 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     border: 1px solid gray;
     padding: 10px;
     border-radius: 1em;
@@ -107,7 +110,7 @@ html{
     align-items: center;
     gap: 1rem;
     padding: 4rem;
-    box-shadow: 6px 6px 0px 0px hsla(0, 0%, 95%);
+    box-shadow: 8px 7px 0px 0px hsla(0, 0%, 85%);
     border: 10px double rgb(37, 97, 134);
     margin: 1rem;
     border-radius: 1em;
@@ -132,7 +135,7 @@ html{
     align-items: center;
     gap: 1rem;
     padding: 4rem;
-    box-shadow: 6px 6px 0px 0px hsla(0, 0%, 95%);
+    box-shadow: 8px 7px 0px 0px hsla(0, 0%, 85%);
     border: 10px double rgb(224, 146, 87);
     margin: 1rem;
     margin-bottom: 2em;
