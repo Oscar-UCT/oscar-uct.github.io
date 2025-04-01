@@ -315,4 +315,10 @@ footer
     {
         width: unset;
     }
+
+    .titulo-seccion
+    {
+        font-size: 3rem;
+        text-align: center;
+    }
 }
