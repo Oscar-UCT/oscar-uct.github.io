@@ -41,7 +41,7 @@ html{
     display: flex;
     align-items: center;
     padding: 1rem;
-    box-shadow: 8px 7px 0px 0px hsla(0, 0%, 85%);
+    box-shadow: 6px 6px 0px 0px hsla(0, 0%, 95%);
     border: 1px solid gray;
     margin: 1rem;
     margin-bottom: 2em;
@@ -228,7 +228,7 @@ html{
     justify-content: center;
     gap: 1rem;
     padding: 4rem;
-    box-shadow: 6px 6px 0px 0px hsla(0, 0%, 95%);
+    box-shadow: 8px 7px 0px 0px hsla(0, 0%, 85%);
     border: 10px double rgb(131, 172, 198);
     margin: 1rem;
     border-radius: 1em;
