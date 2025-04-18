@@ -251,6 +251,7 @@ h3
 .tarjeta-horizontal
 {
     display: flex;
+    align-items: center;
     box-shadow: 0 2px 8px rgb(0, 0, 0, 0.2);
     border-radius: 1em;
     border: 2px solid var(--primary-color);
@@ -282,13 +283,13 @@ h3
 
 .tarjeta-imagen
 {
+    flex-shrink: 0;
     background-position: center;
     background-size: cover;
     width: 10em;
     height: 10em;
     border-radius: 1em;
     /* border: 2px solid var(--primary-color); */
-    flex-shrink: 0;
     margin: 10px;
 }
 /* FIN SECCIÓN EXPERIENCIA*/
@@ -354,5 +355,10 @@ footer
     #presentación-contenido
     {
         width: 100%;
+    }
+    .tarjeta-imagen
+    {
+        height: 5em;
+        width: 5em;
     }
 }
