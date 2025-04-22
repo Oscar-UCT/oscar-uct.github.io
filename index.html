@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio web de Oscar Cariaga, desarrollador y programador.">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/framework.css">
     <link rel="icon" href="./assets/imgs/web-development.ico" type="image/x-icon">
-    <title>Oscar Portafolio</title>
+    <link rel="canonical" href="https://teclab.uct.cl/~oscar.cariaga/portafolio/">
+    <title>Portafolio • Oscar Cariaga</title>
     <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
@@ -24,7 +26,7 @@
     </div>
     <header>
         <h1>Oscar C.</h1>
-        <nav id="navbar-static">
+        <nav id="navbar-static" role="navigation">
             <a href="" class="link">Información</a>
             <a href="#proyectos" class="link">Proyectos</a>
             <a href="#experiencia" class="link">Experiencia</a>
@@ -32,7 +34,7 @@
         </nav>
         <span>Portafolio</span>
         <button id="navbar-btn" class="btn-primary">☰</button>
-        <nav id="navbar-appear">
+        <nav id="navbar-appear" role="navigation">
             <a href="" class="link">Información</a>
             <a href="#proyectos" class="link">Proyectos</a>
             <a href="#experiencia" class="link">Experiencia</a>
@@ -58,12 +60,12 @@
                     <p>Programa para enviar mensajes y archivos de forma asincrónica en C#</p>
             </div>
             <div class="proyecto-tarjeta">
-                    <div class="proyecto-imagen" style="background-image: url(./assets/imgs/notinews.png);"></div>
+                    <div class="proyecto-imagen" style="background-image: url(./assets/imgs/notinews.jpg);"></div>
                     <h4>Notinews</h4>
                     <p>Sitio de noticias ficticias conectado a XAMPP</p>
             </div>
             <div class="proyecto-tarjeta">
-                    <div class="proyecto-imagen" style="background-image: url(./assets/imgs/image.png);"></div>
+                    <div class="proyecto-imagen" style="background-image: url(./assets/imgs/libreria.jpg);"></div>
                     <h4>Libreria</h4>
                     <p>Programa de administración de base de datos de una libreria en Winforms</p>
             </div>
@@ -103,7 +105,7 @@
             </div>
         </div>
     </section>
-    <footer>
+    <footer role="contentinfo">
         <span>© 2025 Oscar Cariaga</span>
         <span></span>
     </footer>

@@ -34,3 +34,5 @@ form.addEventListener('submit', function(event) {
     alert('Correo enviado');
     window.location.href = 'index.html';
 });
+
+// Este archivo Javascript no se "minificó" por su tamaño reducido.
