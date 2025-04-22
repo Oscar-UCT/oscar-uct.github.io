@@ -294,6 +294,74 @@ h3
 }
 /* FIN SECCIÓN EXPERIENCIA*/
 
+/* Ventana flotante contacto */
+.flotante-contenedor
+{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1000;
+}
+
+.flotante-contenido
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: white;
+    padding: 3em 5em;
+    border-radius: 1em;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+    color: var(--primary-color-darker);
+    position: relative;
+    width: 50%;
+}
+
+.flotante-contenido form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.flotante-contenido input
+{
+    width: 100%;
+    padding: 0.8em;
+    font-size: 1.2em;
+    border-radius: 0.8em;
+    border: 1px solid var(--primary-color);
+}
+
+.flotante-contenido form textarea
+{
+    resize: none;
+    padding: 0.5em;
+    font-size: 1.2em;
+    border-radius: 0.8em;
+    border: 1px solid var(--primary-color);
+    height: 10em;
+}
+
+.salir-btn
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 1em 0em 1em 0em;
+    padding: 1em;
+    border: none;
+    font-weight: 900;
+    color: var(--primary-color-darker);
+    background: none;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
 footer
 {
     display: flex;
@@ -315,6 +383,15 @@ footer
     #presentación-contenido
     {
         width: 100%;
+    }
+    .flotante-contenido
+    {
+        width: 95%;
+        padding: 2em;
+    }
+    .flotante-contenido h2
+    {
+        margin-top: 1em;
     }
 }
 
@@ -338,6 +415,11 @@ footer
     #presentación
     {
         margin-bottom: 4em;
+    }
+    .flotante-contenido
+    {
+        width: 95%;
+        padding: 2em;
     }
 }
 

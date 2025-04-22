@@ -10,13 +10,25 @@
     <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
+    <div class="flotante-contenedor" id="ventana-correo">
+        <div class="flotante-contenido">
+            <button class="salir-btn" onclick="CerrarVentanaCorreo()">×</button>
+            <h2>¡Envía un mensaje!</h2>
+            <form action="" id="formulario-contacto">
+                <input type="email" name="nombre" placeholder="Correo" required>
+                <input type="text" name="nombre" placeholder="Asunto" required>
+                <textarea name="Asunto" id="" placeholder="Mensaje" required></textarea>
+                <button class="btn-primary" id="btn-enviar-correo">Enviar correo</button>
+            </form>
+        </div>
+    </div>
     <header>
         <h1>Oscar C.</h1>
         <nav id="navbar-static">
             <a href="" class="link">Información</a>
             <a href="#proyectos" class="link">Proyectos</a>
             <a href="#experiencia" class="link">Experiencia</a>
-            <a href="" class="link">Contacto</a>
+            <span href="" class="link" onclick="MostrarVentanaCorreo()" style="cursor: pointer;">Contacto</span>
         </nav>
         <span>Portafolio</span>
         <button id="navbar-btn" class="btn-primary">☰</button>
