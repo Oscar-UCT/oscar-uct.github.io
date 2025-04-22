@@ -2,7 +2,7 @@
 Versión 2 del proyecto portafolio con nuevo diseño
 
 [Link GitHub](https://oscar-uct.github.io/)\
-[Link Externo con CSS optimizado](https://teclab.uct.cl/~oscar.cariaga/portafolio/)\
+[Link Externo con CSS optimizado](https://teclab.uct.cl/~oscar.cariaga/portafolio/)
 
 ## Proyecto SEO
 [Robots](https://teclab.uct.cl/~oscar.cariaga/robots.txt)\
