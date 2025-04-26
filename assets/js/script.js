@@ -15,27 +15,37 @@ navbarBtn.addEventListener("click", ()=>
     }
 })
 
-// Funciones para controlar la visualización de la ventana de enviar mensaje
-function CerrarVentanaCorreo()
-{
-    document.getElementById("ventana-correo").style.display = "none"
-}
-function MostrarVentanaCorreo()
-{
-    document.getElementById("ventana-correo").style.display = "flex"
-}
 
+// Ventana de contacto falsa con elemento "dialog"
+const contactDialog = document.getElementById("contact-dialog")
 
-const form = document.getElementById('formulario-contacto');
-form.addEventListener('submit', function(event) {
+const contactDialogBtns = document.querySelectorAll(".contacto-btn")
+contactDialogBtns.forEach(contactoBtn =>
+{
+    contactoBtn.addEventListener("click", ()=>
+    {
+        contactDialog.showModal();
+    })
+}
+)
+
+const cerrarDialogoBtn = document.getElementById("cerrarDialogoBtn")
+const enviarBtnDialogo = document.getElementById("enviarBtnDialogo")
+
+cerrarDialogoBtn.addEventListener("click", ()=>{
+    contactDialog.close();
+})
+
+const dialogForm = document.getElementById('mockForm');
+dialogForm.addEventListener('submit', function() {
     // Función "mock" de lo que sería una función para enviar un mensaje
-    if (!form.checkValidity()) { // Revisa si los campos están, si no es así, no continua la función.
+    if (!dialogForm.checkValidity()) { // Revisa si los campos están, si no es así, no continua la función.
         return;
     }
 
-    event.preventDefault(); // Evita que se redireccione a la página con un query string
-    alert('Correo enviado');
-    window.location.href = 'index.html'; // Redirije a la página inicial, lo que se haría por defecto pero una query string
+    dialogForm.reset() // Elimina toda información ingresada
+
+    alert('¡Gracias por tu mensaje!');
 });
 
 // Este archivo Javascript no se "minificó" por su tamaño reducido.

@@ -13,33 +13,45 @@
 </head>
 <body>
     <!-- Esta ventana toma el 100% de la pantalla (ancho y alto) y aloja la ventana de envío de mensaje-->
-    <div class="flotante-contenedor" id="ventana-correo">
-        <div class="flotante-contenido">
-            <button class="salir-btn" onclick="CerrarVentanaCorreo()">×</button>
+    <dialog id="contact-dialog">
+        <div class="dialog-title">
             <h2>¡Envía un mensaje!</h2>
-            <form action="#" id="formulario-contacto">
-                <input type="email" name="nombre" placeholder="Correo" required>
-                <input type="text" name="nombre" placeholder="Asunto" required>
-                <textarea name="Asunto" placeholder="Mensaje" required></textarea>
-                <button class="btn-primary" id="btn-enviar-correo">Enviar correo</button>
-            </form>
+            <button id="cerrarDialogoBtn">✖</button>
         </div>
-    </div>
+        <form action="#" method="dialog" id="mockForm">
+            <div class="input-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="input-group">
+                <label for="correo">Correo</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+            <div class="input-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" style="resize: none;" rows="5" cols="33" maxlength="600" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary svg-btn" id="enviarBtnDialogo">
+                Enviar
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12" fill="none" ><path d="M2 3l20 9-20 9 5-9-5-9z" stroke="currentColor" strokeWidth="2" fill="currentColor"/></svg>
+            </button>
+        </form>
+    </dialog>
     <header>
-        <h1>Oscar C.</h1>
+        <h1 class="header-titles">Oscar C.</h1>
         <nav id="navbar-static">
             <a href="" class="link">Información</a>
             <a href="#proyectos" class="link">Proyectos</a>
             <a href="#experiencia" class="link">Experiencia</a>
-            <span class="link" onclick="MostrarVentanaCorreo()" style="cursor: pointer;">Contacto</span>
+            <span class="link contacto-btn" style="cursor: pointer;">Contacto</span>
         </nav>
-        <span>Portafolio</span>
+        <span class="header-titles">Portafolio</span>
         <button id="navbar-btn" class="btn-primary">☰</button>
-        <nav id="navbar-appear">
+        <nav id="navbar-appear" style="visibility: hidden; opacity: 0;">
             <a href="" class="link">Información</a>
             <a href="#proyectos" class="link">Proyectos</a>
             <a href="#experiencia" class="link">Experiencia</a>
-            <a href="" class="link">Contacto</a>
+            <span class="link contacto-btn" style="cursor: pointer;">Contacto</span>
         </nav>
     </header>
     <section id="presentación">

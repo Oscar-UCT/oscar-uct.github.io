@@ -16,6 +16,12 @@ html
     scroll-behavior: smooth;
 }
 
+/* Restaurar márgenes por defecto */
+dialog
+{
+    margin: auto;
+}
+
 :root
 {
     --primary-color: #00674F;
