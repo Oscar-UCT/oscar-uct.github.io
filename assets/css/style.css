@@ -1,7 +1,26 @@
 @import url(./framework.css);
 
 section h3 {
+    display: flex;
+    align-items: center;
     margin-bottom: 1em;
+    width: 100%;
+}
+
+section h3::after {
+    flex-grow: 1;
+    content: "";
+    height: 0.1rem;
+    background: var(--primary-color);
+    margin-left: 0.5em;
+}
+
+section h3::before {
+    flex-grow: 1;
+    content: "";
+    height: 0.1rem;
+    background-color: var(--primary-color);
+    margin-right: 0.5em;
 }
 
 section {
@@ -9,8 +28,7 @@ section {
 
 }
 
-.svg-btn
-{
+.svg-btn {
     display: flex;
     align-items: center;
     gap: 0.5rem;
