@@ -182,7 +182,7 @@ h3 {
     padding: 2em;
     width: fit-content;
     gap: 1em;
-    width: 30em;
+    width: 35%;
     height: 40em;
 }
 
@@ -421,13 +421,21 @@ footer {
     .flotante-contenido h2 {
         margin-top: 1em;
     }
+    #información-tarjeta
+    {
+        width: 60%;
+    }
 }
 
 @media (max-width:768px) {
-
+    
     section {
         padding: 0 4em;
         margin-bottom: 4em;
+    }
+    #información-tarjeta
+    {
+        width: 100%;
     }
 
     #presentación {
@@ -453,7 +461,10 @@ footer {
     section {
         padding: 1em;
     }
-
+    #información-tarjeta
+    {
+        width: 100%;
+    }
     #presentación {
         flex-direction: column;
         gap: 4em;
