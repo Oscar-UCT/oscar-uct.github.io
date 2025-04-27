@@ -51,7 +51,7 @@ dialogForm.addEventListener('submit', function() {
 function updateChileTime() {
     const chileTime = new Date().toLocaleString("es-CL", {
         timeZone: "America/Santiago",
-        hour12: false, // Use 24-hour format
+        hour12: false, // Usa formato 24 horas
         hour: "2-digit",
         minute: "2-digit",
         second: "2-digit",
@@ -60,10 +60,10 @@ function updateChileTime() {
     document.getElementById("chile-time").textContent = "🇨🇱 " + chileTime;
 }
 
-// Update the time every second
+// Actualizar cada segundo
 setInterval(updateChileTime, 1000);
 
-// Initial time display
+// Carga inicial
 updateChileTime();
 
 
