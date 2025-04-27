@@ -48,4 +48,23 @@ dialogForm.addEventListener('submit', function() {
     alert('¡Gracias por tu mensaje!');
 });
 
+function updateChileTime() {
+    const chileTime = new Date().toLocaleString("es-CL", {
+        timeZone: "America/Santiago",
+        hour12: false, // Use 24-hour format
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+    });
+
+    document.getElementById("chile-time").textContent = "🇨🇱 " + chileTime;
+}
+
+// Update the time every second
+setInterval(updateChileTime, 1000);
+
+// Initial time display
+updateChileTime();
+
+
 // Este archivo Javascript no se "minificó" por su tamaño reducido.

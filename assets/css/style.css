@@ -169,6 +169,45 @@ h3 {
 
 /* FIN SECCIÓN PRESENTACIÓN*/
 
+#información-tarjeta
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    border: 1px solid var(--primary-color-darker);
+    border-radius: 1em;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 2em;
+    width: fit-content;
+    gap: 1em;
+    width: 30em;
+    height: 40em;
+}
+
+#información-imagen
+{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+}
+#información-contenido
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    color: var(--primary-color-darker);
+}
+#información-contenido span
+{
+    text-align: center;
+}
+/* FIN SECCIÓN INFORMACIÓN*/
+
 /* SECCIÓN PROYECTOS */
 #proyectos {
     display: flex;
