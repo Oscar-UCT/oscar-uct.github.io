@@ -1,126 +1,151 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portafolio web de Oscar Cariaga, desarrollador y programador.">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/framework.css">
-    <link rel="icon" href="./assets/imgs/web-development.ico" type="image/x-icon">
-    <link rel="canonical" href="https://teclab.uct.cl/~oscar.cariaga/portafolio/">
-    <title>Portafolio • Oscar Cariaga</title>
-    <script defer src="./assets/js/script.js"></script>
-</head>
-<body>
-    <!-- Esta ventana toma el 100% de la pantalla (ancho y alto) y aloja la ventana de envío de mensaje-->
-    <dialog id="contact-dialog">
-        <div class="dialog-title">
-            <h2>¡Envía un mensaje!</h2>
-            <button id="cerrarDialogoBtn">✖</button>
-        </div>
-        <form action="#" method="dialog" id="mockForm">
-            <div class="input-group">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" required>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portafolio web de Oscar Cariaga, desarrollador y programador.">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/framework.css">
+        <link rel="icon" href="./assets/imgs/web-development.ico" type="image/x-icon">
+        <link rel="canonical" href="https://teclab.uct.cl/~oscar.cariaga/portafolio/">
+        <title>Portafolio • Oscar Cariaga</title>
+        <script defer src="./assets/js/script.js"></script>
+    </head>
+
+    <body>
+        <!-- Esta ventana toma el 100% de la pantalla (ancho y alto) y aloja la ventana de envío de mensaje-->
+        <dialog id="contact-dialog">
+            <div class="dialog-title">
+                <h2>¡Envía un mensaje!</h2>
+                <button id="cerrarDialogoBtn">✖</button>
             </div>
-            <div class="input-group">
-                <label for="correo">Correo</label>
-                <input type="email" id="correo" name="correo" required>
+            <form action="#" method="dialog" id="mockForm">
+                <div class="input-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="input-group">
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <div class="input-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" style="resize: none;" rows="5" cols="33" maxlength="600"
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn-primary svg-btn" id="enviarBtnDialogo">
+                    Enviar
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12" fill="none">
+                        <path d="M2 3l20 9-20 9 5-9-5-9z" stroke="currentColor" fill="currentColor" />
+                    </svg>
+                </button>
+            </form>
+        </dialog>
+        <header>
+            <h1 class="header-titles">Oscar C.</h1>
+            <nav id="navbar-static">
+                <a href="" class="link">Información</a>
+                <a href="#proyectos" class="link">Proyectos</a>
+                <a href="#conocimientos" class="link">Conocimientos</a>
+                <span class="link contacto-btn" style="cursor: pointer;">Contacto</span>
+            </nav>
+            <span class="header-titles">Portafolio</span>
+            <button id="navbar-btn" class="btn-primary">☰</button>
+            <nav id="navbar-appear" style="visibility: hidden; opacity: 0;">
+                <a href="" class="link">Información</a>
+                <a href="#proyectos" class="link">Proyectos</a>
+                <a href="#conocimientos" class="link">Conocimientos</a>
+                <span class="link contacto-btn" style="cursor: pointer;">Contacto</span>
+            </nav>
+        </header>
+        <section id="presentación">
+            <div id="presentación-contenido">
+                <h2>Desarrollador y programador aplicando nuevas conocimientos cada día.</h2>
+                <p>Soy Oscar Cariaga, estudiante de la Universidad Católica de Temuco, aprendiendo para desarrollar
+                    front-ends y back-ends de <strong>calidad</strong>.</p>
+                <a href="#proyectos" class="btn-primary" style="text-decoration: none;">Saber más ⌵</a>
             </div>
-            <div class="input-group">
-                <label for="mensaje">Mensaje</label>
-                <textarea name="mensaje" id="mensaje" style="resize: none;" rows="5" cols="33" maxlength="600" required></textarea>
-            </div>
-            <button type="submit" class="btn-primary svg-btn" id="enviarBtnDialogo">
-                Enviar
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12" fill="none" ><path d="M2 3l20 9-20 9 5-9-5-9z" stroke="currentColor" fill="currentColor"/></svg>
-            </button>
-        </form>
-    </dialog>
-    <header>
-        <h1 class="header-titles">Oscar C.</h1>
-        <nav id="navbar-static">
-            <a href="" class="link">Información</a>
-            <a href="#proyectos" class="link">Proyectos</a>
-            <a href="#experiencia" class="link">Experiencia</a>
-            <span class="link contacto-btn" style="cursor: pointer;">Contacto</span>
-        </nav>
-        <span class="header-titles">Portafolio</span>
-        <button id="navbar-btn" class="btn-primary">☰</button>
-        <nav id="navbar-appear" style="visibility: hidden; opacity: 0;">
-            <a href="" class="link">Información</a>
-            <a href="#proyectos" class="link">Proyectos</a>
-            <a href="#experiencia" class="link">Experiencia</a>
-            <span class="link contacto-btn" style="cursor: pointer;">Contacto</span>
-        </nav>
-    </header>
-    <section id="presentación">
-        <div id="presentación-contenido">
-            <h2>Desarrollador y programador aplicando nuevas tecnologías cada día.</h2>
-            <p>Soy Oscar Cariaga, estudiante de la Universidad Católica de Temuco, aprendiendo para desarrollar front-ends y back-ends de <strong>calidad</strong>.</p>
-            <a href="#proyectos" class="btn-primary" style="text-decoration: none;">Saber más ⌵</a>
-        </div>
-        <img src="./assets/imgs/web-development.png" alt="Imagen de ilustración de programación">
-    </section>
-    <section id="proyectos" style="position: relative;">
-        <h3>
-            Proyectos
-        </h3>
-        <div class="proyectos-grid">
-            <div class="proyecto-tarjeta">
+            <img src="./assets/imgs/web-development.png" alt="Imagen de ilustración de programación">
+        </section>
+        <section id="proyectos" style="position: relative;">
+            <h3>
+                Proyectos
+            </h3>
+            <div class="proyectos-grid">
+                <div class="proyecto-tarjeta">
                     <div class="proyecto-imagen" style="background-image: url(./assets/imgs/chatapp.png);"></div>
                     <h4>Chat app en C#</h4>
-                    <p>Programa para enviar mensajes y archivos de forma asincrónica en C#</p>
-            </div>
-            <div class="proyecto-tarjeta">
+                    <p>Programa de consola desarrollado en C# para enviar mensajes y archivos de forma asincrónica</p>
+                    <div class="tech-stack">
+                        <span class="stack stackCsharp">C#</span>
+                    </div>
+                </div>
+                <div class="proyecto-tarjeta">
                     <div class="proyecto-imagen" style="background-image: url(./assets/imgs/notinews.jpg);"></div>
                     <h4>Notinews</h4>
-                    <p>Sitio de noticias ficticias conectado a XAMPP</p>
-            </div>
-            <div class="proyecto-tarjeta">
+                    <p>Sitio de noticias ficticias conectado a XAMPP usando PHP</p>
+                    <div class="tech-stack">
+                        <span class="stack stackHTML">HTML</span>
+                        <span class="stack stackCSS">CSS</span>
+                        <span class="stack stackPHP">PHP</span>
+                    </div>
+                </div>
+                <a class="proyecto-tarjeta" href="https://github.com/Oscar-UCT/LibreriaProyecto" target="_blank">
                     <div class="proyecto-imagen" style="background-image: url(./assets/imgs/libreria.jpg);"></div>
                     <h4>Libreria</h4>
                     <p>Programa de administración de base de datos de una libreria en Winforms</p>
-            </div>
-            <div class="proyecto-tarjeta">
+                    <div class="tech-stack">
+                        <span class="stack">C#</span>
+                        <span class="stack">SQL Server</span>
+                        <span class="stack">Winforms</span>
+                    </div>
+                </a>
+                <a class="proyecto-tarjeta" href="https://teclab.uct.cl/~oscar.cariaga/calculadora/" target="_blank">
                     <div class="proyecto-imagen" style="background-image: url(./assets/imgs/calculadora.png);"></div>
                     <h4>Calculadora</h4>
                     <p>Calculadora web realizada con Javascript</p>
+                    <div class="tech-stack">
+                        <span class="stack">JavaScript</span>
+                        <span class="stack">HTML</span>
+                        <span class="stack">CSS</span>
+                    </div>
+                </a>
             </div>
-        </div>
-    </section>
-    <section id="experiencia">
-        <h3>Experiencia</h3>
-        <div class="experiencia-filas">
-            <div class="tarjeta-horizontal">
-                <div class="tarjeta-imagen" style="background-image: url(./assets/imgs/NETMicrosoft.png);"></div>
-                <div class="tarjeta-contenido">
-                    <h4>Microsoft .NET</h4>
-                    <p>Desarrollo con ASP.NET, Minimal APIs, C#, Entity Framework Core y SQL Server.</p>
-                    <span class="tarjeta-nivel">Principante</span>
+        </section>
+        <section id="conocimientos">
+            <h3>Conocimientos</h3>
+            <div class="conocimientos-filas">
+                <div class="tarjeta-horizontal">
+                    <div class="tarjeta-imagen" style="background-image: url(./assets/imgs/NETMicrosoft.png);"></div>
+                    <div class="tarjeta-contenido">
+                        <h4>Microsoft .NET</h4>
+                        <p>Desarrollo con ASP.NET, Minimal APIs, C#, Entity Framework Core y SQL Server.</p>
+                        <span class="tarjeta-nivel">Principante</span>
+                    </div>
+                </div>
+                <div class="tarjeta-horizontal">
+                    <div class="tarjeta-imagen" style="background-image: url(./assets/imgs/js_logo.png);"></div>
+                    <div class="tarjeta-contenido">
+                        <h4>Javascript</h4>
+                        <p>Desarrollo general con Javascript y el Framework Vue.</p>
+                        <span class="tarjeta-nivel">Principante</span>
+                    </div>
+                </div>
+                <div class="tarjeta-horizontal">
+                    <div class="tarjeta-imagen" style="background-image: url(./assets/imgs/python_logo.png);"></div>
+                    <div class="tarjeta-contenido">
+                        <h4>Python</h4>
+                        <p>Desarrollo general con Python y el Framework Django.</p>
+                        <span class="tarjeta-nivel">Principante</span>
+                    </div>
                 </div>
             </div>
-            <div class="tarjeta-horizontal">
-                <div class="tarjeta-imagen" style="background-image: url(./assets/imgs/js_logo.png);"></div>
-                <div class="tarjeta-contenido">
-                    <h4>Javascript</h4>
-                    <p>Desarrollo general con Javascript y el Framework Vue.</p>
-                    <span class="tarjeta-nivel">Principante</span>
-                </div>
-            </div>
-            <div class="tarjeta-horizontal">
-                <div class="tarjeta-imagen" style="background-image: url(./assets/imgs/python_logo.png);"></div>
-                <div class="tarjeta-contenido">
-                    <h4>Python</h4>
-                    <p>Desarrollo general con Python y el Framework Django.</p>
-                    <span class="tarjeta-nivel">Principante</span>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <span>© 2025 Oscar Cariaga</span>
-        <span></span>
-    </footer>
-</body>
+        </section>
+        <footer>
+            <span>© 2025 Oscar Cariaga</span>
+            <span></span>
+        </footer>
+    </body>
+
 </html>
