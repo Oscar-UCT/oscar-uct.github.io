@@ -135,6 +135,8 @@ header {
 #presentación {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    z-index: -1;
 }
 
 #presentación img {
