@@ -64,6 +64,8 @@ header {
     flex-wrap: wrap;
     padding: 2em 1em;
     min-width: 1em;
+    position: relative;
+    z-index: 10;
 }
 
 #navbar-static {
@@ -135,8 +137,6 @@ header {
 #presentación {
     display: flex;
     justify-content: space-between;
-    position: relative;
-    z-index: -1;
 }
 
 #presentación img {
