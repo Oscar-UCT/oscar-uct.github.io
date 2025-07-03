@@ -12,6 +12,15 @@ navbarBtn.addEventListener("click", () => {
     }
 })
 
+// Oculta popup si la pantalla cambia de tamaño
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 768) {
+    navbar.classList.remove("show");
+    navbar.style.visibility = "hidden";
+    navbar.style.opacity = "0";
+  }
+});
+
 
 // Ventana de contacto falsa con elemento "dialog"
 const contactDialog = document.getElementById("contact-dialog")
